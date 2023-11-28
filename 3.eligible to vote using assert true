@@ -1,0 +1,20 @@
+package mytask;
+import java.util.*;
+import static org.junit.Assert.*;
+public class eligble_to_vote {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner v1=new Scanner(System.in);
+		System.out.println("enter the age:");
+		int v2=v1.nextInt();
+		if(v2 >= 18)
+		{
+			System.out.println("eligible to vote!!");
+			assertTrue(20<=v2);
+		}
+		else {
+			System.out.println("not eligible to vote!!");
+		}
+	}
+
+}

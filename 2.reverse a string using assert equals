@@ -1,0 +1,20 @@
+package mytask;
+import java.util.*;
+import static org.junit.Assert.*;
+public class reverse_string {
+	public static void main(String[] args) {
+		String  k2="";
+		char ch;
+		Scanner s1=new Scanner(System.in);
+		System.out.println("enter the string:");
+		String k1=s1.nextLine();
+		System.out.println("reversed string is:");
+		for(int i=k1.length();i>0;i--)
+		{
+			ch=k1.charAt(i-1);
+			k2=k2+ch;
+		}
+		System.out.println(k2);
+		assertEquals("narik",k2);
+	}
+}
